@@ -119,9 +119,28 @@ body {
   max-width: 600px;
 }
 
+/* Made for You - 2 column layout */
+.made-for-you-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.made-for-you-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.made-for-you-gallery {
+  display: flex;
+  justify-content: center;
+}
+
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 364px);
+  grid-template-columns: repeat(2, 364px);
   gap: 30px;
   justify-content: center;
   align-items: start;
@@ -220,23 +239,37 @@ body {
   padding: 80px 20px;
 }
 
-.client-reviews h2 {
-  text-align: left;
-  font-size: 2.5em;
-  color: #3a3a3a;
-  font-weight: 300;
-  margin-bottom: 60px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.reviews-grid {
+.client-reviews-grid {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.client-reviews-text h2 {
+  font-size: 2.5em;
+  color: #3a3a3a;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.client-reviews-text p {
+  color: #888;
+  font-size: 0.95em;
+  line-height: 1.8;
+}
+
+.client-reviews-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .review-card {
