@@ -11,6 +11,19 @@ body {
   background-color: #faf9f7;
 }
 
+/* Elegant headings using Playfair Display from Google Fonts */
+h1,
+h2,
+.work-text h2,
+.why-content h2,
+.what-we-offer h2,
+.client-reviews-text h2 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #3a3a3a;
+}
+
 /* HERO SECTION */
 .hero {
   background-color: #99937d;
@@ -174,6 +187,7 @@ body {
   font-weight: 300;
   letter-spacing: 1px;
   margin-bottom: 30px;
+  color: #fff;
 }
 
 .why-content p {
